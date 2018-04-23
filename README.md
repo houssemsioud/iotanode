@@ -23,7 +23,7 @@ cost and WI-FI enabled (using ESP8266) , it integrates GPIO, PWM, IIC,
 
 ![image](nodemcu.jpg)
 
-[fig:img1]
+
 
 The NodeMcu board is programmed with Arduino framework using PlatformIO
 IDE .
@@ -38,19 +38,20 @@ Building this IoT node required 3 types of sensors:
 
 -   Button as an occupancy sensor.
 
-[b]<span>0.3</span> ![Photo-resistor.](photo.jpeg "fig:")
+![Photo-resistor.](photo.jpeg "fig:")
 
-[b]<span>0.315</span> ![Button.](button.jpeg "fig:")
+ ![Button.](button.jpeg "fig:")
 
-[b]<span>0.4</span> ![DHT11 sensor.](dht11.jpeg "fig:")
 
-[fig:sensors]
+ ![DHT11 sensor.](dht11.jpeg "fig:")
+
+
 
 After gathering all the sensors, now we connect them to the board’s pins
 which number is sufficient for operating all the sensors mentioned
 above.
 
-![NodeMcu and sensors setup](setup.jpg "fig:") [fig:setup]
+![NodeMcu and sensors setup](setup.jpg "fig:")
 
 ### PlatformIO IDE
 
@@ -59,11 +60,11 @@ IoT. It supports more than 400 embedded boards , 20 development
 platforms and 10 frameworks. In this project we will be using PlatformIO
 with Atom which is Github’s text editor.
 
-[b]<span>0.4</span> ![PlatformIO Home.](plat1.png "fig:")
+![PlatformIO Home.](plat1.png "fig:")
 
-[b]<span>0.47</span> ![Arduino project in PlatformIO.](plat2.png "fig:")
+![Arduino project in PlatformIO.](plat2.png "fig:")
 
-[fig:platformio]
+
 
 Data gathering
 --------------
