@@ -22,20 +22,20 @@ const char* mqtt_server = "broker.mqtt-dashboard.com";
 
 
 
-unsigned int localPort = 2390;					       	//				-------
-IPAddress timeServerIP;								          //				-------	
-const char* ntpServerName = "time.nist.gov";		//				-------
-const int NTP_PACKET_SIZE = 48;					      	//			  NTP packet 
-unsigned long previousMillis=0;					      	//				-------
-byte packetBuffer[ NTP_PACKET_SIZE];			    	//				-------
-WiFiUDP udp;									                	//				-------
+unsigned int localPort = 2390;					       	//		-------
+IPAddress timeServerIP;							//		-------	
+const char* ntpServerName = "time.nist.gov";				//		-------
+const int NTP_PACKET_SIZE = 48;					      	//	       NTP packet 
+unsigned long previousMillis=0;					      	//		-------
+byte packetBuffer[ NTP_PACKET_SIZE];			    		//		-------
+WiFiUDP udp;								//		-------
 
 
 
-ESP8266WebServer httpServer(80);					      //				HTTP update
+ESP8266WebServer httpServer(80);				//				HTTP update
 ESP8266HTTPUpdateServer httpUpdater;			    	//				initializing
 
-WiFiClient espClient;							            	//				WIFI	
+WiFiClient espClient;							 //				WIFI	
 PubSubClient client(espClient);				      		// 				init
 
 long lastMsg = 0;
